@@ -17,4 +17,4 @@ task :release => :gem do
   sh "gem push pkg/locomotive_cms-#{gemspec.version}.gem"
 end
 
-task :default => [:rspec, :cucumber]
+task :default => [:spec, :cucumber]
