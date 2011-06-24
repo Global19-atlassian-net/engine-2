@@ -18,6 +18,8 @@ module NavigationHelpers
       admin_pages_path
     when /theme assets/
       admin_theme_assets_path
+    when /site settings/
+      edit_admin_current_site_path
 
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
