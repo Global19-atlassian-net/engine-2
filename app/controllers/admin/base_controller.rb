@@ -9,11 +9,13 @@ module Admin
 
     before_filter :require_site
 
-    load_and_authorize_resource
-
     before_filter :validate_site_membership
 
+    load_and_authorize_resource
+
     before_filter :set_locale
+
+    before_filter :set_current_thread_variables
 
     helper_method :sections, :current_site_url, :site_url, :page_url, :current_ability
 
@@ -41,6 +43,11 @@ module Admin
     end
 
     protected
+
+    def set_current_thread_variables
+      Thread.current[:admin] = current_admin
+      Thread.current[:site]  = current_site
+    end
 
     def current_ability
       @current_ability ||= Ability.new(current_admin, current_site)
