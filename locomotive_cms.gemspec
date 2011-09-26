@@ -26,7 +26,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'devise_bushido_authenticatable', '1.0.0.alpha10'
 
   s.add_dependency 'mongoid', '~> 2.0.2'
-  s.add_dependency 'bson_ext', '~> 1.3.0'
+  s.add_dependency 'bson_ext', '~> 1.4.0'
   s.add_dependency 'locomotive_mongoid_acts_as_tree', '0.1.5.7'
   s.add_dependency 'will_paginate', '~> 3.0.0'
 
@@ -36,7 +36,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'formtastic', '~> 1.2.3'
   s.add_dependency 'inherited_resources', '~> 1.1.2'
 
-  s.add_dependency 'rmagick', '2.12.2'
+  s.add_dependency 'rmagick', '~> 2.13.0'
   s.add_dependency 'carrierwave', '0.5.6'
   s.add_dependency 'dragonfly',  '~> 0.9.1'
   s.add_dependency 'rack-cache'
